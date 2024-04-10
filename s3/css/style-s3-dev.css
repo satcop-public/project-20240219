@@ -1,4 +1,6 @@
-/** 3 **/
+/** 4 **/
+
+
 
 .bg_f1 {
     background-color: #F1F1F1 !important;
@@ -26,6 +28,7 @@
 
 .cont_wrap_101 {
     padding: 0;
+    margin-bottom: -3.75rem !important;
 }
 
 .main.main-bottom-zero {
@@ -2768,7 +2771,9 @@ p.s3-p-text1 {
     background: #FFF5ED;
     position: relative;
     padding: 1.875rem;
+    /*
     margin-bottom: -3.75rem;
+    */
 }
 .s3-tip.s3-tip-type2 {
     margin-bottom: 0;
