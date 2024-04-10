@@ -1,3 +1,5 @@
+/** 2024.04.10 - PM 4:25 **/
+
 .bg_f1 {
     background-color: #F1F1F1 !important;
 }
@@ -1272,7 +1274,7 @@ section.cal-list-wrapper ul > li {
 .s3-item-list .item .text .btn_alarm3 > span {
     display: inline-block;
     padding-left: 1.5rem;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5rem;
     color: #FF6600;
     background: url(../../s3/img/calendar/icon-bell.svg) no-repeat left center/1.5rem auto;
@@ -1320,7 +1322,7 @@ section.cal-list-wrapper ul > li {
     display: inline-block;
     padding-right: 1.5rem;
 
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5rem;
     color: #FF6600;
     background: url(../../s3/img/icon_arrow_right_type5-f60.svg) no-repeat right center/1.5rem auto;
