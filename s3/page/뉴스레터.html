@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+
+  <!-- s2 files -->
+  <link rel="stylesheet" href="../../s2/css/normalize.css"/>
+  <link rel="stylesheet" href="../../s2/js/lib/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="../../s2/css/style.css"/>
+  <script type="text/javascript" src="../../s2/js/lib/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="../../s2/js/lib/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="../../s2/js/select-ui.js"></script>
+
+  <!-- s3 files -->
+  <link rel="stylesheet" href="../../s3/css/style-s3.css"/>
+
+  <title>orange touch</title>
+</head>
+
+<body>
+<div class="wrap">
+  <header class="header">
+    <div class="inner">
+      <div class="left">
+        <a class="link" href=""><span class="hidden">뒤로가기</span></a>
+        <h2 class="title">뉴스레터</h2>
+      </div>
+      <div class="right">
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="cont_wrap_101 stretch bg_gray">
+
+      <div class="s3-cont-wrap">
+
+        <div class="s3-title102">
+          <div class="logo">
+            <img src="../../s3/img/sample/sample-box-03.svg"/>
+          </div>
+          <p class="info mt_10">라이프에 활기를 더하는 달달한 혜택과 소식</p>
+        </div>
+
+        <div class="s3-news101">
+          <div class="hdr">
+            <h3>이달의 뉴스레터</h3>
+            <a href="#" class="link-month">4월호</a>
+          </div>
+
+          <div class="s3-news101-detail">
+            <img class="photo" src="../../s3/img/sample/sample-news-01.jpeg"/>
+
+            <div class="hash">
+              <a href="#">#63 SALON</a>
+            </div>
+
+            <div class="bttm">
+              <h4>손웅정 감독 특별 강연 응모 이벤트</h4>
+              <p class="summary">손흥민 선수의 아버지이자 축구 스승인 손웅정 감독의 강연에 초대합니다. 1:1 사인회와 럭키 드로우까지 풍성하게 준비된 63살롱에 지금 바로 응모해 보세요!</p>
+              <div class="perid">
+                <p>응모기간 : 2024.04.15(월)~04.30(화)</p>
+                <p>행사일정 : 2024.05/14(화) 19:00 ~ 21:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="s3-btns">
+            <div class="bottom_popup_footer">
+              <a href="#" class="btn s_2 c_2 r_1">자세히보기</a>
+              <a href="#" class="btn s_2 c_1 r_1">고객에게 발송하기</a>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="s3-news101-list">
+          <h3>지난 뉴스레터 목록</h3>
+
+          <div class="s3-new101-item">
+            <div class="border">
+              <p class="hash">2024. 3월호</p>
+              <p class="tlt1 mt_10">한화생명 공식 뉴스레터 3월호</p>
+              <p class="cnt1 mt_10">제목은 어드민에서 등록하고 2줄까지 노출됩니다. 제목은 어드민에서 등록</p>
+              <p class="prd1 mt_10">발행일  |  2024.03.28</p>
+            </div>
+          </div>
+
+          <div class="s3-new101-item">
+            <div class="border">
+              <p class="hash">2024. 3월호</p>
+              <p class="tlt1 mt_10">한화생명 공식 뉴스레터 3월호</p>
+              <p class="cnt1 mt_10">제목은 어드민에서 등록하고 2줄까지 노출됩니다. 제목은 어드민에서 등록</p>
+              <p class="prd1 mt_10">발행일  |  2024.03.28</p>
+            </div>
+          </div>
+
+          <div class="s3-new101-item">
+            <div class="border">
+              <p class="hash">2024. 3월호</p>
+              <p class="tlt1 mt_10">한화생명 공식 뉴스레터 3월호</p>
+              <p class="cnt1 mt_10">제목은 어드민에서 등록하고 2줄까지 노출됩니다. 제목은 어드민에서 등록</p>
+              <p class="prd1 mt_10">발행일  |  2024.03.28</p>
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+  </main>
+</div>
+
+
+<script defer src="../../s2/js/common-ui.js"></script>
+<script>
+  $(() => {
+    const swiper1 = new Swiper("#swiper_1", {
+      //loop: true,
+      slidesPerView: 1,
+      initialSlide: 0,
+      centeredSlides: true,
+
+      pagination: {
+        el: "#swiper_1 .swiper-pagination",
+        type: "bullets",
+      },
+    });
+
+    swiper1.on("slideChange", function (a) {
+      const $bg = a.$el.closest('.s3-cont-wrap').find('.s3-cont-bg');
+      $bg.find('img').addClass('bg-hidden');
+      $bg.find('img').eq(this.realIndex).removeClass('bg-hidden');
+    });
+
+    const swiper2 = new Swiper("#swiper_2", {
+      loop: true,
+      slidesPerView: 1.4,
+      initialSlide: 0,
+      centeredSlides: true,
+      pagination: {
+        el: "#swiper_2 .swiper-pagination",
+        type: "bullets",
+      },
+    });
+  });
+</script>
+</body>
+</html>
+

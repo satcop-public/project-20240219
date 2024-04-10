@@ -1,0 +1,711 @@
+<!--
+화면ID: PACSM2002M01.html
+화면명: 이벤트 보관함
+기간: 2024.02.26 ~ 2024.02.29
+-->
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+
+    <!-- s2 files -->
+    <link rel="stylesheet" href="../../s2/css/normalize.css"/>
+    <link rel="stylesheet" href="../../s2/js/lib/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../../s2/css/style.css"/>
+    <script type="text/javascript" src="../../s2/js/lib/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../../s2/js/lib/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../../s2/js/select-ui.js"></script>
+
+    <!-- s3 files -->
+    <link rel="stylesheet" href="../../s3/css/style-s3.css"/>
+
+    <title>orange touch</title>
+</head>
+<body>
+
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="left">
+                <a class="link" href=""><span class="hidden">뒤로가기</span></a>
+                <h2 class="title">월별 혜택 보기</h2>
+            </div>
+            <div class="right">
+                <a href="#" name="btnAlert" class="bell active" onclick="$('#popup1').openPop(); return false;">알림</a>
+                <a href="" class="home">메인으로</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main bg_white">
+
+        <div class="ot_active_top">
+            <a href="#">
+                <img src="../../s3/img/sample/sample_event_detail_image_1.png"
+                     style="border-bottom: 1px solid #000;"
+                     alt="sample_event_detail_image_1"/>
+            </a>
+
+            <a href="#">
+                <img src="../../s3/img/sample/sample_event_detail_image_2.png"
+                     style="border-bottom: 1px solid #000;"
+                     alt="sample_event_detail_image_2"/>
+            </a>
+
+            <a href="#">
+                <img src="../../s3/img/sample/sample_event_detail_image_3.png"
+                     style="border-bottom: 1px solid #000;"
+                     alt="sample_event_detail_image_3"/>
+            </a>
+
+            <a href="#">
+                <img src="../../s3/img/sample/sample_event_detail_image_4.png"
+                     style="border-bottom: 1px solid #000;"
+                     alt="sample_event_detail_image_4"/>
+            </a>
+
+            <a href="#">
+                <img src="../../s3/img/sample/sample_event_detail_image_5.png"
+                     style="border-bottom: 1px solid #000;"
+                     alt="sample_event_detail_image_5"/>
+            </a>
+        </div>
+
+
+        <div class="cont_wrap pt_24">
+            <div class="note_text ty2">유의사항</div>
+            <ul class="list_bullet ty8 mt_16">
+                <li>
+                    본 이벤트는 FP님의 초대로만 입장할 수 있는 비공개 이벤트입니다. 많은 분들께 소개해주세요.
+                </li>
+                <li>
+                    이벤트 콘텐츠를 받은 고객은 본인인증을 진행해야 정상적으로 응모가 완료됩니다.
+                </li>
+                <li>
+                    관리자에서 입력한 유의사항이 노출되는 영역입니다.
+                </li>
+                <li>
+                    유의사항 입력은 오렌지터치앱관리 > 이벤트관리 > 이벤트 등록/수정 > 이벤트 상세 등록/수정에서 Text 입력박스에 입력합니다.
+                </li>
+                <li>
+                    텍스트 글자수 제한은 없습니다.
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <div class="btn_pagetop_area">
+        <button class="btn_pagetop"></button>
+    </div>
+
+
+    <div class="btn_area bd">
+        <button class="btn s_1 c_2">공유하기</button>
+        <button class="btn s_1 c_1">응모하기</button>
+    </div>
+
+    <!-- 아래는 1개 버튼시 사용 -->
+    <!--
+    <div class="btn_area">
+        <button class="btn s_1 c_1">고객에게 발송하기</button>
+    </div>
+    -->
+
+    <!-- 아래는 2개 버튼시 사용 -->
+    <!--
+    <div class="btn_area bd">
+        <button class="btn s_1 c_2">이전</button>
+        <button class="btn s_1 c_1">홈으로</button>
+    </div>
+    -->
+
+
+    <section id="include-popup">
+
+
+        <div class="full_popup_wrap" id="popup-fullcalendar">
+
+            <header class="header">
+                <div class="inner">
+                    <div class="left">
+                        <h2 class="title">혜택 캘린더</h2>
+                    </div>
+                    <div class="right">
+                        <a href="" class="close">카드</a>
+                    </div>
+                </div>
+            </header>
+
+            <main class="main">
+
+
+                <div __style="display: none;" class="calendar-wrapper">
+
+                    <div class="calendar-title">
+                        <button class="previous-btn" type="button" disabled><span>이전 달</span></button>
+                        <h3>2024.04</h3>
+                        <button class="next-btn" type="button"><span>다음 달</span></button>
+                    </div>
+
+                    <div class="calendar-header">
+                        <div class="calendar-header-cell">
+                            <p>일</p>
+                        </div>
+                        <div class="calendar-header-cell">
+                            <p>월</p>
+                        </div>
+                        <div class="calendar-header-cell">
+                            <p>화</p>
+                        </div>
+                        <div class="calendar-header-cell">
+                            <p>수</p>
+                        </div>
+                        <div class="calendar-header-cell">
+                            <p>목</p>
+                        </div>
+                        <div class="calendar-header-cell">
+                            <p>금</p>
+                        </div>
+                        <div class="calendar-header-cell">
+                            <p>토</p>
+                        </div>
+                    </div>
+
+                    <div class="calendar-days">
+                        <div class="day-list">
+                            <div class="calendar-day">
+                                <div class="calendar-cell previous-day">
+                                    <p class="day-text">3/31</p>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">1</p>
+
+                                    <div class="issue-text">
+                                        <p class="ctg1">인사카드</p>
+                                        <p class="ctg2">4월1주차 경제하이라이트</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">2</p>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell today">
+                                    <p class="day-text">3</p>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">4</p>
+
+                                    <div class="issue-text">
+                                        <p class="ctg3">이번 주말엔 꼭! 주말잇슈</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">5</p>
+
+
+                                    <div class="issue-text">
+                                        <p class="ctg4">[이달콘]개봉 예정작</p>
+                                        <p class="ctg5">3월 별자리운세-사수자리</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">6</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="calendar-days">
+
+                        <div class="day-list">
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">7</p>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">8</p>
+
+                                    <div class="issue-text">
+                                        <p class="ctg5">4월2주차 위클리 경제뉴스</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">9</p>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell holiday">
+                                    <p class="day-text">10</p>
+                                    <p class="day-text-holiday">22대국회의원선거일</p>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">11</p>
+
+                                    <div class="issue-text">
+                                        <p class="ctg6">나만알고싶은봄소풍명소4</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">12</p>
+
+                                    <div class="issue-text">
+                                        <p class="ctg7">골프의계절이왔어요!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">13</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calendar-days">
+
+                        <div class="day-list">
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">14</p>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">15</p>
+
+                                    <div class="issue-text">
+                                        <p class="ctg8">4월3주차 위클리결제뉴스</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">16</p>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">17</p>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell"><!--  calendar-cell-evt -->
+                                    <p class="day-text">18</p>
+
+                                    <div class="issue-text">
+                                        <p class="ctg1">아이들과함께즐기는소확행</p>
+                                        <p class="ctg2">이번주말에볼거리,먹거리</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell calendar-cell-evt1">
+                                    <p class="day-text">19</p>
+
+                                    <div class="issue-text">
+                                        <p class="ctg3">손웅정초청강의하느날</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">20</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="event-list">
+                            <div class="event-line mon color-1">
+                                <div class="event-start-icon">
+                                    <img class="evt" src="../../s3/img/sample/icon-event-sample1.svg"/>
+                                </div>
+                                <p class="event-text">[63살롱] 손웅정 감독 강연 응모 이벤트</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calendar-days">
+
+                        <div class="day-list">
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">21</p>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">22</p>
+
+                                    <div class="issue-text">
+                                        <p class="ctg4">4월4주차 경제하이라이트</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">23</p>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">24</p>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell calendar-cell-evt2">
+                                    <p class="day-text">25</p>
+
+                                    <div class="issue-text">
+                                        <p class="ctg5">주말잇슈-서울리빙디자인</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">26</p>
+
+                                    <div class="issue-text">
+                                        <p class="ctg6">딩동!봄이도착했습니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">27</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="event-list">
+                            <div class="event-line color-1">
+                                <p class="event-text"></p>
+                            </div>
+                            <div class="event-line mon color-2">
+                                <div class="event-start-icon">
+                                    <img class="evt" src="../../s3/img/sample/icon-event-sample2.svg"/>
+                                </div>
+                                <p class="event-text">[골든위크] 건강 다짐하고 선물받자 당첨 이벤트</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="calendar-days">
+
+                        <div class="day-list">
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">28</p>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">29</p>
+
+                                    <div class="issue-text">
+                                        <p class="ctg4">4월4주차 경제하이라이트</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell">
+                                    <p class="day-text">30</p>
+                                    <div class="issue-text">
+                                        <p class="ctg1">인사카드-벗꽃이피었습니다.</p>
+                                        <p class="ctg2">4월 띠별운세-돼지띠</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell next-day">
+                                    <p class="day-text">5/1</p>
+
+                                    <div class="issue-text">
+                                        <p class="ctg3">어버이날선물추천5가지</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell next-day">
+                                    <p class="day-text">2</p>
+
+                                    <div class="issue-text">
+                                        <p class="ctg4">5월1주차주말잇슈</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell next-day">
+                                    <p class="day-text">3</p>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="calendar-cell next-day">
+                                    <p class="day-text">4</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="event-list">
+                            <div class="event-line end-tue color-1">
+                                <div class="event-end-icon">
+                                    <img class="evt" src="../../s3/img/sample/icon-event-sample1.svg"/>
+                                </div>
+                                <p class="event-text">[63살롱] 이벤트 종료</p>
+                            </div>
+                            <div class="event-line end-sat color-2">
+                                <div class="event-end-icon">
+                                    <img class="evt" src="../../s3/img/sample/icon-event-sample2.svg"/>
+                                </div>
+                                <p class="event-text">[골든위크] 이벤트 종료</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="calendar-tail">
+                    </div>
+
+                </div>
+
+
+                <section __style="display: none;" class="cal-list-wrapper">
+
+                    <h3>이달의 슬기로운 혜택 N가지</h3>
+
+                    <div class="s3-item-list">
+
+                        <div class="item">
+                            <div class="line"></div>
+                            <img class="badge" src="../../s3/img/sample/icon-event-sample1.svg"/>
+                            <div class="text">
+                                <p class="text-period"><span class="text">04.05(월) ~ 04.30(화)</span></p>
+                                <div class="text-sharp-area mt_10">
+                                    <p class="text-sharp">#63SALON</p>
+                                </div>
+                                <p class="text-title mt_10">무엇보다 기본이 중요 손흥민의 영원한 멘토 손웅정</p>
+                                <p class="text-day mt_10"><span>행사일정 : 5월 10일</span><span class="s3-bar">63컨벤션 라벤더홀</span></p>
+
+                                <div class="mt_10">
+                                    <a href="#" class="btn_join"><span>참여하기</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="line"></div>
+                            <img class="badge" src="../../s3/img/sample/icon-event-sample3.svg"/>
+                            <div class="text">
+                                <p class="text-period"><span class="text">04.05(월) ~ 04.30(화)</span><span class="s3-bar">D-4</span></p>
+                                <div class="text-sharp-area mt_10">
+                                    <p class="text-sharp">#GOLDEN WEEK</p>
+                                </div>
+                                <p class="text-title mt_10">고객도 나도, 친구도 받고 건강 다짐 선택하고 선물받자.</p>
+                                <div class="mt_10">
+                                    <a href="#" class="btn_alarm"><span>알림받기</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="line"></div>
+                            <div class="badge">
+                                <div class="clock">
+                                    <!--<div class="hour-hand"></div>-->
+                                    <div class="minute-hand"></div>
+                                </div>
+                                <img src="../../s3/img/sample/icon-event-sample4.svg"/>
+                            </div>
+
+                            <div class="text">
+                                <p class="text-period"><span class="text">04.25(목)</span><span class="s3-bar">D-10</span></p>
+                                <div class="text-sharp-area mt_10">
+                                    <p class="text-sharp text-sharp-type2">#뉴스레터</p>
+                                </div>
+                                <p class="text-title mt_10">한화생명 LIFE& 뉴스레터 4월호</p>
+                                <div class="mt_10">
+                                    <a href="#" class="btn_alarm"><span>알림받기</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="line"></div>
+                            <img class="badge" src="../../s3/img/sample/icon-event-sample1.svg"/>
+                            <div class="text">
+                                <p class="text-period"><span class="text">04.30(수)</span><span class="s3-bar">D-13</span></p>
+                                <div class="text-sharp-area mt_10">
+                                    <p class="text-sharp text-sharp-type3">#행사 D-DAY</p>
+                                </div>
+                                <p class="text-title mt_10">[63살롱] 손흥민의 영원한 멘토 손웅정 초청 강의</p>
+                                <p class="text-day mt_10"><span>63컨벤션 라벤더홀</span></p>
+                                <div class="mt_10">
+                                    <a href="#" class="btn_join"><span>나의 당첨 고객 보기</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <div class="line"></div>
+                            <img class="badge" src="../../s3/img/sample/icon-event-sample1.svg"/>
+                            <div class="text">
+                                <p class="text-period"><span class="text">04.05(월) ~ 04.30(화)</span></p>
+                                <div class="text-sharp-area mt_10">
+                                    <p class="text-sharp">#63SALON</p>
+                                </div>
+                                <p class="text-title mt_10">손흥민의 영원한 멘토<br/>손웅정 강연 응모 이벤트</p>
+                                <p class="text-day mt_10"><span>행사일정 : 5월 10일</span><span class="s3-bar">63컨벤션 라벤더홀</span></p>
+
+                                <div class="mt_10">
+                                    <a href="#" class="btn_join"><span>자세히보기</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="line"></div>
+                            <img class="badge" src="../../s3/img/sample/icon-event-sample3.svg"/>
+                            <div class="text">
+                                <p class="text-period"><span class="text">04.05(월) ~ 04.30(화)</span><span class="s3-bar">D-4</span></p>
+                                <div class="text-sharp-area mt_10">
+                                    <p class="text-sharp">#GOLDEN WEEK</p>
+                                </div>
+                                <p class="text-title mt_10">건강 다짐 선택하고 100% 선물받자! 참여 이벤트</p>
+                                <div class="mt_10">
+                                    <a href="#" class="btn_comingsoon"><span>COMING SOON</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="line"></div>
+                            <img class="badge" src="../../s3/img/sample/icon-event-sample4.svg"/>
+                            <div class="text">
+                                <p class="text-period"><span class="text">04.25(목)</span></p>
+                                <div class="text-sharp-area mt_10">
+                                    <p class="text-sharp text-sharp-type2">#뉴스레터</p>
+                                </div>
+                                <p class="text-title mt_10">한화생명 LIFE& 뉴스레터 4월호</p>
+                                <div class="mt_10">
+                                    <a href="#" class="btn_comingsoon"><span>COMING SOON</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+                <section class="cal-check-wrapper">
+
+                    <div class="check-contents">
+                        <h4>주목해야 할 신규 콘텐츠</h4>
+                        <h3 class="mt_10">이달의 터치 콘텐츠👆</h3>
+                        <div class="inner_top mt_16">
+                            <img src="../../s3/img/calendar/icon-smale.svg"/>
+                            <div class="txt_box">
+                                <div class="txt_1">매달, 매주 고객님에게 가볍게 터치하기 좋은 다채로운 콘텐츠들이 업데이트 되고 있어요!</div>
+                            </div>
+                        </div>
+
+                        <div class="btn_area mt_16">
+                            <a href="" class="btn_view_more02"><span>콘텐츠 바로가기</span></a>
+                        </div>
+                    </div>
+
+                </section>
+
+            </main>
+
+
+            <div class="btn_area bd">
+                <a href="../mp/GALMM0101M01.html" class="btn s_1 c_1">확인</a>
+            </div>
+        </div>
+
+    </section>
+
+
+
+</div>
+
+
+<script defer src="../../s2/js/common-ui.js"></script>
+<script>
+    (function () {
+
+
+        $(function () {
+
+            $('#popup-fullcalendar').openPop();
+
+            // 캘린더 cell 계산
+            const resizeCalendar = () => {
+                $('.calendar-days').each(function(i, v) {
+                    const $this = $(v);
+                    const eventHeight = $this.find('.event-list').height() || 0;
+                    let fixEventHeight = eventHeight;
+                    if (eventHeight > 0) {
+                        fixEventHeight = eventHeight + 50;
+                    }
+
+                    let maxHeight = 0;
+
+                    $this.find('.calendar-cell').each(function(j, v2) {
+                        const $this = $(v2);
+                        const issueHeight = $(v2).find('.issue-text').height() || 0;
+
+                        if (eventHeight > 0 || issueHeight > 0) {
+                            //$this.height(`${fixEventHeight + issueHeight}px`);
+                            if (maxHeight < (fixEventHeight + issueHeight)) {
+                                maxHeight = fixEventHeight + issueHeight;
+                            }
+                        }
+                    });
+
+                    $this.find('.calendar-cell').each(function(j, v2) {
+                        const $this = $(v2);
+                        $this.height(`${maxHeight}px`);
+                    });
+                });
+            }
+
+            $(window).on('resize', function() {
+                resizeCalendar();
+            });
+            resizeCalendar();
+
+        });
+
+    }());
+</script>
+</body>
+</html>

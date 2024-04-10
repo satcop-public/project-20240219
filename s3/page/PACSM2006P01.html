@@ -1,0 +1,145 @@
+<!--
+화면ID: PACAM1004M01.html
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+
+    <!-- s2 files -->
+    <link rel="stylesheet" href="../../s2/css/normalize.css"/>
+    <link rel="stylesheet" href="../../s2/js/lib/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../../s2/css/style.css"/>
+    <script type="text/javascript" src="../../s2/js/lib/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../../s2/js/lib/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../../s2/js/select-ui.js"></script>
+
+    <!-- s3 files -->
+    <link rel="stylesheet" href="../../s3/css/style-s3.css"/>
+
+    <title>orange touch</title>
+</head>
+<body>
+
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="left">
+                <a class="link" href=""><span class="hidden">뒤로가기</span></a>
+                <h2 class="title">탑 시크릿 노트 상세</h2>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main bg_white">
+
+
+        <div class="ot_active_top">
+            <a href="#">
+                <img src="../../s3/img/sample/sample_event_detail_image_1.png"
+                     style="border-bottom: 1px solid #000;"
+                     alt="sample_event_detail_image_1"/>
+            </a>
+
+            <a href="#">
+                <img src="../../s3/img/sample/sample_event_detail_image_2.png"
+                     style="border-bottom: 1px solid #000;"
+                     alt="sample_event_detail_image_2"/>
+            </a>
+
+            <a href="#">
+                <img src="../../s3/img/sample/sample_event_detail_image_3.png"
+                     style="border-bottom: 1px solid #000;"
+                     alt="sample_event_detail_image_3"/>
+            </a>
+
+            <a href="#">
+                <img src="../../s3/img/sample/sample_event_detail_image_4.png"
+                     style="border-bottom: 1px solid #000;"
+                     alt="sample_event_detail_image_4"/>
+            </a>
+
+            <a href="#">
+                <img src="../../s3/img/sample/sample_event_detail_image_5.png"
+                     style="border-bottom: 1px solid #000;"
+                     alt="sample_event_detail_image_5"/>
+            </a>
+        </div>
+
+
+    </main>
+
+    <div class="btn_pagetop_area">
+        <button class="btn_pagetop"></button>
+    </div>
+
+    <div class="bottom-eval-area">
+
+        <p class="s3-text-info101 mt_20">탑 시크릿 노트 #N</p>
+        <p class="s3-text-info102 mt_10">8단계 터치로 OK! DB고객 신계약 성공 노하우</p>
+        <p class="s3-text-info102 mt_10">내용을 평가해주세요.</p>
+
+        <div class="eval-star-layer">
+            <form name="star-form">
+                <input type="hidden" name="starCount" value="0"/>
+            <div class="eval-star mt_16">
+                <a href="#"><span class="icon-star"></span></a>
+                <a href="#"><span class="icon-star"></span></a>
+                <a href="#"><span class="icon-star"></span></a>
+                <a href="#"><span class="icon-star"></span></a>
+                <a href="#"><span class="icon-star"></span></a>
+            </div>
+
+            <div class="btn_area mt_16">
+                <button type="submit" class="btn s_2 c_5 r_2">평가 저장</button>
+            </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="btn_area">
+        <a href="#" class="btn s_1 c_1">목록보기</a>
+    </div>
+
+</div>
+
+
+<script defer src="../../s2/js/common-ui.js"></script>
+<script>
+    (() => {
+        $(function () {
+            const $starForm = $('form[name=star-form]');
+
+            $starForm.on('submit', function() {
+                const count = $(this).find('.eval-star span.on').length;
+                $(this).find('input[name=starCount]').val(count);
+
+                alert(count);
+                return false;
+            });
+
+            $('.eval-star').on('click', 'a', function () {
+                const $this = $(this);
+                const $span = $this.find('span');
+                const $div = $this.closest('div');
+                const index = $div.find('span').index($span);
+
+                $div.find('span').each(function (i, v) {
+                    if (i <= index) {
+                        $(v).addClass('on');
+                    } else {
+                        $(v).removeClass('on');
+                    }
+                });
+                return false;
+            });
+        });
+    })();
+</script>
+</body>
+</html>
