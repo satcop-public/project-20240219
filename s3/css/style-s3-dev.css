@@ -1,5 +1,4 @@
-/** 4 **/
-
+/** 5 **/
 
 
 .bg_f1 {
@@ -631,15 +630,15 @@ section.alert-bar > .inner.align-center {
 }
 
 .calendar-days .calendar-day .calendar-cell .issue-text p.ctg1::before {
-    background-color: #7767E4;
+    background-color: #2057FE;
 }
 
 .calendar-days .calendar-day .calendar-cell .issue-text p.ctg2::before {
-    background-color: #26AA85;
+    background-color: #DD0CE1;
 }
 
 .calendar-days .calendar-day .calendar-cell .issue-text p.ctg3::before {
-    background-color: #0C7BE1;
+    background-color: #03B227;
 }
 
 .calendar-days .calendar-day .calendar-cell .issue-text p.ctg4::before {
@@ -647,18 +646,14 @@ section.alert-bar > .inner.align-center {
 }
 
 .calendar-days .calendar-day .calendar-cell .issue-text p.ctg5::before {
-    background-color: #FF558E;
+    background-color: #05BAF3;
 }
 
 .calendar-days .calendar-day .calendar-cell .issue-text p.ctg6::before {
-    background-color: #8A4A9B;
+    background-color: #9E2EF3;
 }
 
 .calendar-days .calendar-day .calendar-cell .issue-text p.ctg7::before {
-    background-color: #2A60AF;
-}
-
-.calendar-days .calendar-day .calendar-cell .issue-text p.ctg8::before {
     background-color: #FF6600;
 }
 
