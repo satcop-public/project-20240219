@@ -1,5 +1,9 @@
 /** 2024.04.11 **/
-/** v-4 **/
+/** v-5 **/
+
+
+
+
 
 .bg_f1 {
     background-color: #F1F1F1 !important;
@@ -915,8 +919,8 @@ section.cal-list-wrapper ul > li {
     -moz-box-align: start;
     -ms-flex-align: start;
     align-items: start;
-    gap: 1rem;
     padding-top: 1.875rem;
+    gap: 0.625rem;
 }
 
 .s3-item-list .item.item-type2 {
@@ -946,16 +950,16 @@ section.cal-list-wrapper ul > li {
     -moz-box-flex: 0;
     -ms-flex: none;
     flex: none;
-    width: 4.375rem;
-    height: 4.375rem;
+    width: 3.75rem;
+    height: 3.75rem;
     margin-top: 0.5rem;
-    border-radius: 4rem;
+    border-radius: 3.75rem;
     position: relative;
 }
 
 .s3-item-list .item .badge > img {
     width: 100%;
-    border-radius: 4rem;
+    border-radius: 3.75rem;
 }
 
 .s3-item-list .item .badge > .dday {
@@ -1016,6 +1020,9 @@ section.cal-list-wrapper ul > li {
     -moz-box-flex: 1;
     -ms-flex: auto;
     flex: auto;
+}
+
+.s3-item-list .item .text .text-period {
 }
 
 .s3-item-list .item.item-type2 .text {
@@ -1146,12 +1153,12 @@ section.cal-list-wrapper ul > li {
 
 .s3-item-list .item .text .text-sharp {
     display: inline-block;
-    padding: 0.2rem 1rem;
+    padding: 0.125rem 1rem;
     box-sizing: border-box;
     border-radius: 1rem;
     background: #3F3F3F;
     color: #FFFFFF;
-    font-size: 0.855rem;
+    font-size: 0.75rem;
     line-height: 1.2rem;
 }
 
@@ -1170,8 +1177,8 @@ section.cal-list-wrapper ul > li {
 .s3-item-list .item .text > .text-title {
     display: block;
     font-weight: 600;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: #202020;
 }
 
@@ -3636,4 +3643,4 @@ img.temp_img {
     width: 100%;
     opacity: 0.4;
 }
-    
+
