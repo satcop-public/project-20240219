@@ -1,6 +1,5 @@
 /** 2024.04.11 **/
-/** v-1 **/
-
+/** v-2 **/
 
 .bg_f1 {
     background-color: #F1F1F1 !important;
@@ -531,7 +530,7 @@ section.alert-bar > .inner.align-center {
 
 .calendar-days .calendar-day .calendar-cell p.day-text-holiday {
     margin-top: -0.625rem;
-    font-size: 0.8125rem;
+    font-size: 0.6875rem;
     line-height: 0.9375rem;
     box-sizing: border-box;
     text-align: left;
