@@ -1,6 +1,5 @@
 /** 2024.04.11 **/
-/** v-3 **/
-
+/** v-4 **/
 
 .bg_f1 {
     background-color: #F1F1F1 !important;
@@ -947,8 +946,8 @@ section.cal-list-wrapper ul > li {
     -moz-box-flex: 0;
     -ms-flex: none;
     flex: none;
-    width: 4rem;
-    height: 4rem;
+    width: 4.375rem;
+    height: 4.375rem;
     margin-top: 0.5rem;
     border-radius: 4rem;
     position: relative;
@@ -2158,7 +2157,7 @@ h3.s3-h3-title101 {
 
 .ota_point_comp .text101 em {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.375rem;
     line-height: 1.5rem;
     color: #F5381F;
 }
@@ -2887,6 +2886,7 @@ p.s3-p-text1 {
     color: #fff;
     line-height: 1.775rem;
     font-size: 0.775rem;
+    text-align: center;
 }
 
 .s3-item104 .tip > span {
@@ -3636,4 +3636,4 @@ img.temp_img {
     width: 100%;
     opacity: 0.4;
 }
-
+    
