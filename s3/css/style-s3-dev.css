@@ -1,5 +1,5 @@
 /** 2024.04.11 **/
-/** v-5 **/
+/** v-6 **/
 
 
 
@@ -497,13 +497,14 @@ section.alert-bar > .inner.align-center {
     display: block;
     position: absolute;
     z-index: 100;
-    left: 0;
-    top: 0;
+    left: 5%;
+    top: 5%;
     right: 0;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     background: url(../../s3/img/calendar/icon-dday.svg) no-repeat center top;
     background-size: 100%;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.25));
 }
 
 .calendar-days .calendar-day .calendar-cell.calendar-cell-evt2 {
@@ -515,13 +516,14 @@ section.alert-bar > .inner.align-center {
     display: block;
     position: absolute;
     z-index: 100;
-    left: 0;
-    top: 0;
+    left: 5%;
+    top: 5%;
     right: 0;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     background: url(../../s3/img/calendar/icon-news.svg) no-repeat center top;
     background-size: 100%;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.25));
 }
 
 .calendar-days .calendar-day .calendar-cell p.day-text {
@@ -960,6 +962,7 @@ section.cal-list-wrapper ul > li {
 .s3-item-list .item .badge > img {
     width: 100%;
     border-radius: 3.75rem;
+    height: 3.75rem;
 }
 
 .s3-item-list .item .badge > .dday {
