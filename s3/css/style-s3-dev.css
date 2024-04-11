@@ -1,6 +1,7 @@
 /** 2024.04.11 **/
 /** v-2 **/
 
+
 .bg_f1 {
     background-color: #F1F1F1 !important;
 }
@@ -2143,7 +2144,7 @@ h3.s3-h3-title101 {
     padding: 0.5rem 0 0 0;
     font-weight: 600;
     font-size: 1.375rem;
-    line-height: 1.75rem;
+    line-height: 1.875rem;
     color: #202020;
     text-align: center;
 }
@@ -2151,7 +2152,7 @@ h3.s3-h3-title101 {
 .ota_point_comp .text101 span {
     display: block;
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 1.375rem;
     line-height: 1.5rem;
 }
 
@@ -3616,3 +3617,23 @@ p.s3-p-text1 {
 .s3-gray-wrap .noti_msg_box {
     background-color: #F5F5F5;
 }
+
+
+
+
+
+
+
+
+
+img.temp_img {
+
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 45px;
+    right: 0;
+    width: 100%;
+    opacity: 0.4;
+}
+
